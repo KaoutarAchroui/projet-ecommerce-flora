@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="icon" href="img/F.png">
+  <script src="script.js" defer></script>
+  <script src="cart.js" async></script>
+  <title> Flora | &nbsp;Cart</title>
+</head>
+
+<body>
+ 
+  <section id="header">
+    <p  class="flora">F.L.O.R.A</p>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li id="lg-bag">
+          <a class="active" href="cart.html"><i class="fa-solid fa-shopping-bag"></i></a>
+        </li>
+        <a href="#" id="close"><i class="fa fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a class="active" href="cart.html"><i class="fa fa-shopping-bag" style="color: #088178;"></i></a>
+      <i id="bar" class="fas fa-outdent active"></i>
+    </div>
+  </section>
+
+  <section id="page-header" class="about-header">
+    <h2 style="color: black;">#Your-Cart</h2>
+
+    <p style="color: black;">Browse our categories and discover our best offers!</p>
+  </section>
+
+  <section id="cart" class="section-p1">
+    <table width="100%">
+      <thead>
+        <tr>
+          <td>REMOVE</td>
+          <td>IMAGE</td>
+          <td>PRODUCT</td>
+          <td>PRICE</td>
+          <td>QUANTITY</td>
+          <td>SUBTOTAL</td>
+        </tr>
+      </thead>
+      <tbody class="cart-items" id="cart-body">
+       
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cart-add" class="section-p1">
+    <div id="coupon">
+      <h3>Apply Coupon</h3>
+      <div>
+        <input type="text" placeholder="Enter Your Coupon" maxlength="5">
+        <button class="normal" onclick="coupon()"  >Apply</button>
+      </div>
+    </div>
+
+    <div id="subtotal">
+      <h3>Cart Total</h3>
+      <table>
+        <tr>
+          <td>Cart Subtotal</td>
+          <td class="cart-subtotal">€ 2397</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td><b>Total</b></td>
+          <td class="cart-total" style="font-weight:600;">€ 2397</td>
+        </tr>
+      </table>
+      <button class="normal" id="btn-purchase">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+      <p  class="flora">F.L.O.R.A</p>
+      <h4>Contact</h4>
+      <p><b>Address:</b> Marina, Agadir, Morocco</p>
+      <p><b>Phone:</b> (+212) 512345678 / (+212) 523234545</p>
+      <p><b>Hours:</b> 10:00 - 20:00, Mon - Sat</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <i class="fab fa-linkedin"  ></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>We are flora</h4>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </div>
+    
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <a href="https://www.apple.com/fr/app-store/"><img src="img/pay/app.jpg"></a>
+        <a href="https://play.google.com/store/games?pli="><img src="img/pay/play.jpg"></a>
+        
+      
+      </div>
+      <p>Secured Payment Gateway</p>
+      <img src="img/pay/pay.png" alt="" />
+    </div>
+    
+  </footer>
+ 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
